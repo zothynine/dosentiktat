@@ -1,0 +1,19 @@
+:root {
+  --bg-color: #ccc;
+  --hidden-color: #aaa
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: system-ui;
+}
+
+li {
+  cursor: zoom-out;
+}
+
+.hidden {
+  background-color: var(--hidden-color);
+  color: var(--hidden-color);
+  cursor: zoom-in;
+}
