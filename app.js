@@ -2,6 +2,7 @@ import { sentences } from './data.js'
 
 function toggleSentence(ev) {
   const item = ev.target
+  if (item.nodeName.toLowerCase() !== "span") return;
   console.info(`toggling ${item}`)
   item.classList.toggle("hidden")
 }
@@ -11,8 +12,8 @@ function writeSentences(list) {
   console.info("writing sentences …")
 
   sentences.forEach(sentence => {
-    list.insertAdjacentHTML("beforeend", `<li>${sentence}</li>`)
-    list.querySelector("li:last-child").addEventListener("click", toggleSentence)
+    list.insertAdjacentHTML("beforeend", `<li><span>${sentence}</span></li>`)
+    list.querySelector("li:last-child span").addEventListener("click", toggleSentence)
   })
 
   return list

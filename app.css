@@ -1,19 +1,42 @@
 :root {
-  --bg-color: #ccc;
-  --hidden-color: #aaa
+  --dark: 5%;
+  --light: 95%;
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: hsl(196,0%,var(--light));
+  color: hsl(196,0%,var(--dark));
+  font-family: system-ui-serif;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: hsl(196,0%,var(--dark));
+    color: hsl(196,0%,var(--light));
+  }
+}
+
+h1 {
   font-family: system-ui;
+  font-size: 1rem;
+  padding: 0;
+}
+
+ul {
+  font-size: 1.5rem;
+  margin-top: 0;
 }
 
 li {
+  padding: 1.5rem 0;
+}
+
+li span {
   cursor: zoom-out;
 }
 
 .hidden {
-  background-color: var(--hidden-color);
-  color: var(--hidden-color);
+  background-color: hsl(196,0%,var(--dark));
+  color: hsl(196,0%,var(--dark));
   cursor: zoom-in;
+  border-radius: 2rem;
+  padding: 0 0.5rem;
 }
