@@ -33,4 +33,5 @@ function init() {
 
 window.addEventListener("DOMContentLoaded", init)
 
-// deploy with surge  --domain ddkt.surge.sh
+// deploy with:
+// surge  --domain ddkt.surge.sh
