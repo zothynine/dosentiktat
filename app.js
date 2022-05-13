@@ -22,6 +22,13 @@ function writeSentences(list) {
 function init() {
   const list = document.querySelector("main ul")
   writeSentences(list)
+
+  document.querySelector("header").addEventListener("click", event => {
+    const action = event?.target?.className
+    action === "bigger"
+      ? list.classList.add("big")
+      : list.classList.remove("big")
+  })
 }
 
 window.addEventListener("DOMContentLoaded", init)
