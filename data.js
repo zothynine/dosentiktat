@@ -7,7 +7,7 @@ export const sentences = [
   "Leg deine Beine auf den Tisch!",
   "Da kommt schon die Rettung!",
   "Du hast aber einen starken Schnupfen!",
-  "Kann ich mich mit dieser Krankheit ansteken?",
+  "Kann ich mich mit dieser Krankheit anstecken?",
   "Du blutest aus der Nase!",
   "Das ist kein Blut, das ist Saft."
 ];
