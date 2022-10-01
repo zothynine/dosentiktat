@@ -1,4 +1,15 @@
-import { sentences } from './data.js'
+const sentences = [
+  "Peter hat Gregor mit dem Ball am Kopf getroffen.",
+  "Wir brauchen noch Mehl für den Kuchen.",
+  "Sie treffen sich jede Woche bei ihren Nachbarn.",
+  "Simone weint, weil sie ihre Hose zerrissen hat.",
+  "Das Brot ist schon hart.",
+  "Lisa gießt jeden Tag in Omas Zimmer die Blumen.",
+  "Roland trifft sich morgen mit seinen Freunden.",
+  "Sei nicht so frech!",
+  "Das war wirklich eine Gemeinheit!",
+  "Mir war langweilig, da habe ich Steine in den See geworfen."
+];
 
 function toggleSentence(ev) {
   const item = ev.target
@@ -24,7 +35,7 @@ function init() {
   writeSentences(list)
 
   document.querySelector("header").addEventListener("click", event => {
-    const action = event?.target?.className
+    const action = event && event.target && event.target.className
     action === "bigger"
       ? list.classList.add("big")
       : list.classList.remove("big")
